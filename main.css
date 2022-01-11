@@ -1,0 +1,202 @@
+body{
+	width:100vw;
+	height:100vh;
+	background-image: url("./src/bg-lg.jpg");
+	margin: 0;
+	font-family: Open Sans;
+	user-select: none;
+}
+
+.navbar{
+	display:flex;
+	justify-content: flex-end;
+}
+
+.cls-1 {
+	fill: #334956;
+}
+.cls-3 {
+	fill: #6FB7B2;
+}
+
+.cls-2 {
+	fill: #fff;
+	font-size: 20px;
+	font-family: OpenSans-Semibold, Open Sans;
+	font-weight: 600;
+}
+
+.btn-add{
+	cursor: pointer;
+}
+
+.navbar .btn-add{
+	margin-top:15px;
+	margin-right: 20px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.71); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.skin{
+	display:inline-block;
+}
+.column{
+	display: flex;
+	flex-direction: column;
+}
+
+.hide{
+display:none;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+  border-radius: 20px;
+  height:75%;
+  position:relative;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Ressource Form */
+
+input:focus{
+    outline: none;
+}
+
+#ressource-form{
+	display:flex;
+	justify-content: center;
+	position:absolute;
+	bottom:2%;
+	width:95%;
+}
+#ressource-form input{
+	border-radius: 23px;
+	border: solid 1px #334956;
+	font-family: Open Sans;
+	color: #334956;
+	padding-left:10px;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size:1.1rem;
+}
+#ressource-form input::placeholder{
+	color:rgba(51,73,86,0.27);
+	font-weight: 500;
+	text-align: center;
+	font-size:1.1rem;
+}
+
+#nom-ressource-form{
+	width:60%;
+	margin-right: 2%;
+}
+
+#lien-ressource-form{
+	width:40%;
+	margin-right: 2%;
+}
+
+/* Ressources */
+
+.ressource{
+	background-color: #6FB7B2;
+	display: inline-block;
+	padding: 0px 18px;
+	font-weight:500;
+	color:white;
+	text-align: center;
+	border-radius: 23px;
+	font-size:1.1rem;
+	cursor:pointer;
+	margin:1%;
+}
+/* création Fichiers */
+
+#nom-file-form{
+	border-radius: 23px;
+	border: solid 1px #334956;
+	font-family: Open Sans;
+	color: #334956;
+	padding-left:10px;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size:1.1rem;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#nom-file-form::placeholder{
+	color:rgba(51,73,86,0.27);
+	font-weight: 500;
+	text-align: center;
+	font-size:1.1rem;
+}
+
+#btn-create-file{
+	border-radius: 23px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size:1.1rem;
+	text-align: center;
+	height:50px;
+	background-color: #334956;
+	line-height:45px;
+	cursor:pointer;
+}
+
+.text-vertical-align-center{
+display: inline-block;
+  vertical-align: middle;
+  line-height:normal;
+}
+
+.file-modal-content{
+	width:280px;
+	height:110px;
+}
+
+/* Fichiers */
+
+.file-name{
+	font-weight: 500;
+}
+.file{
+	align-items: center;
+	cursor:pointer;
+}
+.screen{
+	margin-left:2%;
+}
